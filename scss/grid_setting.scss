@@ -1,0 +1,28 @@
+@import '_media_setting';
+
+// grid
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: 100% / 12 * $i;
+        &-s{
+            @include min-size($size-s){
+                width: 100% / 12 * $i !important;
+            }    
+        }
+        &-m{
+            @include min-size($size-m){
+                width: 100% / 12 * $i !important;
+            }    
+        }
+        &-l{
+            @include min-size($size-l){
+                width: 100% / 12 * $i !important;
+            }    
+        }
+        &-xl{
+            @include min-size($size-xl){
+                width: 100% / 12 * $i !important;
+            }    
+        }
+    }
+}

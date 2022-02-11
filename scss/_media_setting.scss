@@ -1,0 +1,20 @@
+// var
+$size-s: 576px;
+$size-m: 768px;
+$size-l: 992px;
+$size-xl: 1200px;
+
+$land: landscape;
+$port: portrait;
+
+// mixin
+@mixin min-size($widthSize){
+    @media(min-width: $widthSize){
+        @content;
+    }
+}
+@mixin ori-direction($direction){
+    @media(orientation: $direction){
+        @content;
+    }
+}

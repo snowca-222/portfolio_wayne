@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu Chieh Hsieh Web Profoilo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/grid_setting.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <main id="main_layout">
+        <div class="container">
+            <article>
+                <section id="about" class="clearfix">
+                    <div id="photo_box" class="col-6-s col-12">
+                        <div id="photo_img"></div>
+                    </div>
+                    <div class="col-6-s col-12">
+                        <div id="designer_information">
+                            <h3 class="designer_title"><span>Designer</span></h3>
+                            <div class="designer_name"><span class="designer_ch">謝羽捷</span>&nbsp;<span class="designer_en">Yu Chieh Hsieh</span></div>
+                            <div class="designer_introduce">
+                                <ul>
+                                    <li>個性活潑、外向。</li>
+                                    <li>喜愛創作與研究，分享知識與技巧。</li>
+                                    <li>曾任職教育相關產業、進口代理業、遊戲業等相關產業。</li>
+                                    <li>在網頁相關領域有至少有 8 年以上經歷。</li>
+                                    <li>曾擔任過講師與助教職務。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="clearfix">
+                <div class="col-6-l col-12">
+                    <section id="software">
+                        <h3 class="title"><span>軟體工具<span class="title_straight_line"></span>Software</span></h3>
+                        <ul id="software_list" class="clearfix"></ul>
+                    </section>
+                    <section id="skills">
+                        <h3 class="title"><span>工作技能<span class="title_straight_line"></span>Skills</span></h3>
+                        <ul id="skill_list" class="clearfix"></ul>
+                    </section>
+                    <section id="hobbies">
+                        <h3 class="title"><span>興趣<span class="title_straight_line"></span>Hobbies</span></h3>
+                        <ul id="hobby_list" class="clearfix"></ul>
+                    </section>
+                </div>
+                <div class="col-6-l col-12">
+                    <section id="works" class="clearfix">
+                        <h3 class="title"><span>經歷<span class="title_straight_line"></span>Experience</span></h3>
+                        <div class="works_box col-4-m col-12">
+                            <div class="works_main_title"><span class="year_text">2013</span><span class="title_text">平面美編<span class="title_2nd_text">設計師</span></span></div>
+                            <div class="works_content">
+                                <ul>
+                                    <li>幼教教材書籍編排設計</li>
+                                    <li>文宣海報、名片設計</li>
+                                    <li>Flash 動畫製作</li>
+                                    <li>產品包裝設計</li>
+                                    <li>CIS 招牌與燈箱設計</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="works_box col-4-m col-12">
+                            <div class="works_main_title"><span class="year_text">2014</span><span class="title_text">網頁前端<span class="title_2nd_text">設計師</span></span></div>
+                            <div class="works_content">
+                                <ul>
+                                    <li>網頁前端設計</li>
+                                    <li>文宣海報、名片設計</li>
+                                    <li>商品拍攝與美化</li>
+                                    <li>紙本印刷設計與規範</li>
+                                    <li>相關 logo 設計</li>
+                                    <li>遊戲 UI 規劃與製作</li>
+                                    <li>多媒體動畫設計</li>
+                                    <li>聯播網廣告設計</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="works_box col-4-m col-12">
+                            <div class="works_main_title"><span class="year_text">2019</span><span class="title_text">網頁前端<span class="title_2nd_text">工程師</span></span></div>
+                            <div class="works_content">
+                                <ul>
+                                    <li>網頁前端設計</li>
+                                    <li>網頁前端資料處理</li>
+                                    <li>API 資料串接</li>
+                                    <li>多媒體動畫製作</li>
+                                    <li>廣告製作</li>
+                                    <li>UI 介面設計</li>
+                                    <li>logo 設計</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="important_soho" class="works_box col-12">
+                            <div class="works_main_title">接案經歷</div>
+                            <div class="works_content">
+                                <ul id="soho_list"></ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12">
+                    <section id="collections">
+                        <h3 class="title"><span>作品與案例<span class="title_straight_line"></span>Collections</span></h3>
+                        <ul id="collection_nav"></ul>
+                        <div id="collection_box">
+                            <ul id="collection_list">
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <article id="collection_float_box">
+                <div class="closeBtn"></div>
+                <div id="prev_btn" class="arrow_btn"><span>Prev</span></div>
+                <div id="next_btn" class="arrow_btn"><span>Next</span></div>
+                <div id="collection_graphic">
+                    <div id="collection_graphic_link"></div>
+                    <div id="collection_movie_frame"></div>
+                    <div id="collection_movie_link"></div>
+                    <div id="collection_web_link"></div>
+                </div>
+                <div id="collection_text"></div>
+            </article>
+        </div>
+    </main>
+    <div id="go_top_btn"><span class="top"></span></div>
+    <footer>
+    </footer>
+</body>
+<script src="js/works_data.js"></script>
+<script>
+    let collection_place = 'graphic';
+    let total_data_num = 0;
+    let movie_txt = false;
+    let now_sequence_num = '';
+
+    // collections lists
+    $(document).ready(function(){     
+        let collection_list = '';
+        works_datas.map((data, idx)=>{
+            collection_list += `
+                <li><img src="images/${collection_place}/${data.graphic}" data-id="${data.id}" data-sequence="${idx+1}"></li>
+            `;
+        }).join("");
+        document.querySelector('#collection_list').innerHTML = collection_list;
+        total_data_num = works_datas.length;
+
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 200){
+                $('#go_top_btn').fadeIn();
+            }else{
+                $('#go_top_btn').fadeOut();
+            }
+        })
+    })
+    // software
+    const software_lists = ['Ps','Ai','Id','An','Ae','Pr','CSP','ZB','SP','MAYA','B3D','Figma'];
+    const software_fullname_lists = ['Photoshop','Illustrator','Indesign','Animate','After Effects',
+                                    'Premiere Pro','Clip Studio Paint','Zbrush','Substance Painter','MAYA',
+                                    'Blender 3D','Figma'];
+    let software_box = '';
+    software_lists.forEach( (software_list ,idx) => {
+        software_box += `<li><div class="software_icon ${software_list}_icon" title="${software_fullname_lists[idx]}">${software_list}</div></li>`;
+    });
+    document.querySelector('#software_list').innerHTML = software_box;
+
+    // skills
+    const skills_lists = ['HTML','CSS','SASS','JavaScript','JQuery','Vue.js','RWD','PHP','Canvas','平面設計','插畫','影片後製','分鏡繪製','3D模型製作'];
+    let skill_box = '';
+    skills_lists.forEach( (skills_list) => {
+        skill_box += `<li><div>${skills_list}</div></li>`;
+    });
+    document.querySelector('#skill_list').innerHTML = skill_box;
+
+    // hobbies
+    const hobby_lists = ['2D/3D創作','音樂遊戲','技術教學','模型製作','影片創作','羽球運動','日本語'];
+    let hobby_box = '';
+    hobby_lists.forEach( (hobby_list) => {
+        hobby_box += `<li><div>${hobby_list}</div></li>`;
+    })
+    document.querySelector('#hobby_list').innerHTML = hobby_box;
+
+    // soho
+    const soho_lists = ['網頁書籍撰寫','網頁錄影教學','網頁教學課程現場助教','Panasonic 商品插畫繪製','機車貸款網站製作','營造產業形象網站','美甲師形象網站','會計師形象網站','手遊 PV 影片設計與製作','遊戲相關周邊商品設計','活動企劃與執行'];
+    let soho_box = '';
+    soho_lists.forEach( (soho_list) => {
+        soho_box += `<li><div>${soho_list}</div></li>`;
+    })
+    document.querySelector('#soho_list').innerHTML = soho_box;
+
+    // collections
+    const collection_btn_lists = [
+        {
+            type: 'graphic',
+            content: '2D/3D創作'
+        },
+        {
+            type: 'works',
+            content: '商業設計'
+        },
+        {
+            type: 'web',
+            content: '網站設計'
+        }
+    ];
+    let collection_btn_box = '';
+    collection_btn_lists.forEach( (col_btn_list) => {
+        collection_btn_box += `<li><div id="${col_btn_list.type}" class="collection_btn">${col_btn_list.content}</div></li>`;
+    })
+    // document.querySelector('#collection_nav').innerHTML = collection_btn_box;
+    // document.querySelector('#collection_nav > li:first-child').classList.add('active');
+
+    
+    $('#collection_list').on('click','li',function(){
+        document.querySelector('#collection_float_box').classList.add('active');
+        document.querySelector('#main_layout').classList.add('blackboard');
+        let imgId = $(this).find('img').attr('data-sequence');
+        showImg(works_datas, imgId);
+    })
+    function hideMovie(){
+        $('#changeMovie_btn').removeClass('active').html('觀看影片'), movie_txt = false;
+        $('#collection_movie_frame').removeClass('active');
+        document.querySelector('#collection_movie_frame').innerHTML = '';
+    }
+    $('#collection_float_box').on('click','.closeBtn', () => {
+        hideMovie();
+        document.querySelector('#collection_float_box').classList.remove('active');
+        document.querySelector('#main_layout').classList.remove('blackboard');        
+    })
+
+    $('#collection_nav').on('click','li',function(){
+        $(this).addClass('active').siblings('.active').removeClass('active');
+    })
+    $('#prev_btn').on('click',()=>{
+        hideMovie();
+        let prev_num = '';
+        (now_sequence_num - 1 == 0)? prev_num = works_datas.length : prev_num = now_sequence_num - 1;
+        showImg(works_datas, prev_num);
+    })
+    $('#next_btn').on('click',()=>{
+        hideMovie();
+        let next_num = '';
+        (now_sequence_num + 1 > works_datas.length)? next_num = 1: next_num = now_sequence_num + 1;
+        showImg(works_datas, next_num);
+    })
+    function showImg(get_datas, get_imgId){
+        get_datas.map((data, idx) =>{
+            if(idx+1 == get_imgId){
+                let imgSrc = `<img src="images/${collection_place}/${data.graphic}" data-sequence="${idx+1}">`;
+                let imgContent = `【${data.name}】<div>${data.content}</div>`;
+                let imgMovie = `<div id="changeMovie_btn">觀看影片</div>`;
+                let imgIframe = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${data.movie_url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                `;
+                let webLink = `<a href="${data.web}" target="_blank">點擊進入</a>`;
+                (data.movie_url.length != 0)
+                ? (document.querySelector('#collection_movie_link').innerHTML = imgMovie,
+                    document.querySelector('#collection_movie_frame').innerHTML = imgIframe)
+                : (document.querySelector('#collection_movie_link').innerHTML = '',
+                    document.querySelector('#collection_movie_frame').innerHTML = '');
+                
+                (data.web.length != 0)
+                ? document.querySelector('#collection_web_link').innerHTML = webLink
+                : document.querySelector('#collection_web_link').innerHTML = ''
+                document.querySelector('#collection_graphic_link').innerHTML = imgSrc;
+                document.querySelector('#collection_text').innerHTML = imgContent;
+                now_sequence_num = idx+1;
+            }
+        })
+
+        $('#changeMovie_btn').on('click',()=>{
+            $('#collection_movie_frame').toggleClass('active');
+            (movie_txt == false)
+            ? ($('#changeMovie_btn').addClass('active').html('返回圖片'), movie_txt = true)
+            : ($('#changeMovie_btn').removeClass('active').html('觀看影片'), movie_txt = false)
+        })
+    }
+
+    $('#go_top_btn').on('click',()=>{
+        $('html, body').animate({scrollTop: 0}, 'slow');
+        $('#go_top_btn').addClass('active');
+        setTimeout(()=>{
+            $('#go_top_btn').removeClass('active');
+        },1000);
+        return false;
+    })
+    // $('#go_top_btn').mouseover(()=>{
+        
+    // })
+    
+</script>
+</html>
