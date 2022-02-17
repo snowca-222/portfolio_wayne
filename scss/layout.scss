@@ -186,6 +186,22 @@ article{
                         font-size: 20px;
                         margin: 10px 0;
                     }
+                    &_contact{
+                        position: relative;
+                        padding-left: 26px;
+                        &::before{
+                            position: absolute;
+                            display: block;
+                            content: "";
+                            width: 20px;
+                            height: 20px;
+                            left: 0;
+                            background-image: url(../images/icon/mail.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 20px 20px;
+                        }
+                    }
                     &_introduce{
                         ul{
                             margin: 20px 0;
