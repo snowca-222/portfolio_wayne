@@ -297,12 +297,30 @@ const works_datas = [
         "web": ""
     },
     {
-        "id": "wk6",
+        "id": "wk5",
         "listType": "works",
         "name": "商業設計 - 遠征M PV 影片 (國賓電子看板)",
         "graphic": "works_6.jpg",
         "content": "替台灣淘米製作的 PV 影片，並投放再台北西門國賓戶外電子看板上。",
         "movie_url": "eewf-hQjVq0",
+        "web": ""
+    },
+    {
+        "id": "wk6",
+        "listType": "works",
+        "name": "商業設計 - 電子遊戲類型 banner / 動畫設計與製作",
+        "graphic": "works_7.jpg",
+        "content": "職場時所製作的關於電子遊戲相關的 banner 與開獎動畫製作。",
+        "movie_url": "",
+        "web": ""
+    },
+    {
+        "id": "wk7",
+        "listType": "works",
+        "name": "商業設計 - 電子遊戲類相關 UI 製作",
+        "graphic": "works_8.jpg",
+        "content": "職場時所製作的關於電子遊戲相關的 icon、logo 等元件。",
+        "movie_url": "",
         "web": ""
     },
     {
@@ -340,5 +358,5 @@ const works_datas = [
         "content": "過去任職公司接洽的客戶專案，是一個含有購物車系統的網站。前端設計皆由我獨自發想，並與客戶來回討論後進行製作，購物車系統則交由配合的後端工程師協助處理。",
         "movie_url": "",
         "web": "https://www.oa-mart.com.tw/index.php"
-    }    
+    }
 ]

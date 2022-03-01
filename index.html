@@ -29,7 +29,9 @@
                                     <li>個性活潑、外向。</li>
                                     <li>喜愛創作與研究，分享知識與技巧。</li>
                                     <li>曾任職教育相關產業、進口代理業、遊戲業等相關產業。</li>
-                                    <li>網頁相關領域有 8 年以上經歷，工作上還是會接觸到部分 3D 及多媒體製作。</li>
+                                    <li>網頁相關領域有 8 年以上經歷，工作上有接觸到部分 3D 及多媒體製作。</li>
+                                    <li>日本語勉強中。</li>
+                                    <li>目前正在自學 cocos、unity。</li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +146,10 @@
         let collection_list = '';
         works_datas.map((data, idx)=>{
             collection_list += `
-                <li><img src="images/${collection_place}/${data.graphic}" data-id="${data.id}" data-sequence="${idx+1}"></li>
+                ${(data.movie_url.length > 0)? 
+                    `<li class="type_have_mv">`
+                    :`<li>`}
+                <img src="images/${collection_place}/${data.graphic}" data-id="${data.id}" data-sequence="${idx+1}"></li>
             `;
         }).join("");
         document.querySelector('#collection_list').innerHTML = collection_list;

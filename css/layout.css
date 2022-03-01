@@ -635,12 +635,17 @@ article section#collections ul#collection_list {
 article section#collections ul#collection_list li {
   width: 100%;
   margin: 10px;
-  border: 1px solid #efefef;
+  border: 2px solid;
+  border-color: #efefef;
   overflow: hidden;
-  box-shadow: 0 2px 2px #000;
+  box-shadow: 0 2px 2px #000, 0 0 5px #efefef;
   align-self: flex-start;
   cursor: pointer;
   transition: box-shadow 0.2s ease, border 0.2s ease;
+}
+article section#collections ul#collection_list li.type_have_mv {
+  border-color: #cf3f6f;
+  box-shadow: 0 0 5px #cf3f6f;
 }
 @media (min-width: 576px) {
   article section#collections ul#collection_list li {
@@ -663,7 +668,7 @@ article section#collections ul#collection_list li {
   }
 }
 article section#collections ul#collection_list li:hover {
-  border: 1px solid #2ff1c9;
+  border-color: #2ff1c9;
   box-shadow: 0 0 5px #2ff1c9;
 }
 
